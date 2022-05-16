@@ -18,7 +18,7 @@
       <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
     <style>
-        .img {
+        .nav .img {
             width: 100%;
         }
         
@@ -28,7 +28,28 @@
             background-color: pink;
             height: 280px;
         }
+        
+        .thumbnail img {
+            width: 20%;
+        }
+        
+        .thumbnail {
+            border: none;
+        }
+        
+        .col-md-4 {
+            margin: 20px auto;
+        }
+        
+        .caption {
+            text-align: center;
+        }
+        
+        .bottomline>hr {
+            border: 2px red solid;
+        }
     </style>
+
 
 </head>
 
@@ -122,14 +143,133 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    <!-- 三列布局 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="./images/logo1.png" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="./images/logo1.png" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="./images/logo1.png" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 下部横线 -->
+        <div class="bottomline">
+            <hr>
+        </div>
+    </div>
+    <!-- 标签页 -->
+    <div>
 
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+        </ul>
 
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active" id="home">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3>多伦多</h3>
+                            <p>多伦多是个好地方</p>
 
+                        </div>
+                        <div class="col-md-5">
+                            <img src="./images/logo1.png" alt="">
 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="profile">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3>多伦多</h3>
+                            <p>多伦多是个好地方</p>
+
+                        </div>
+                        <div class="col-md-5">
+                            <img src="./images/logo1.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="messages">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3>多伦多</h3>
+                            <p>多伦多是个好地方</p>
+
+                        </div>
+                        <div class="col-md-5">
+                            <img src="./images/logo1.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="settings">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3>多伦多</h3>
+                            <p>多伦多是个好地方</p>
+
+                        </div>
+                        <div class="col-md-5">
+                            <img src="./images/logo1.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 版权 -->
+    <div class="container">
+        &copy 尚硅谷
+    </div>
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
     <script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script>
+        $('#myTabs a:last').tab('show')
+    </script>
 </body>
 
 </html>
